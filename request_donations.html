@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Donation - Food Donation Tracker</title>
+    <link rel="stylesheet" href="request_donations.css"> 
+</head>
+<body>
+    <header>
+        <h1>Food Donation Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="donate.html">Food Donation Entry</a></li>
+                <li><a href="view_donations.html">View Donations</a></li>
+                <li><a href="request_donations.html">Request Donations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Request Food Donations</h2>
+        <form id="request-form">
+            <label for="requester-name">Your Name:</label>
+            <input type="text" id="requester-name" name="requester-name" required>
+
+            <label for="food-item">Food Item Needed:</label>
+            <input type="text" id="food-item" name="food-item" required>
+
+            <label for="quantity">Quantity Needed:</label>
+            <input type="text" id="quantity" name="quantity" required>
+
+            <label for="urgency">Urgency:</label>
+            <select id="urgency" name="urgency" required>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <input type="submit" value="Submit Request">
+            <p id=response-msg></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Food Donation Tracker. All rights reserved.</p>
+    </footer>
+
+    <script src="./request_donation.js"></script>
+</body>
+</html>

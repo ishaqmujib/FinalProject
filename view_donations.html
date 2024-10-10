@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Donations - Food Donation Tracker</title>
+    <link rel="stylesheet" href="view_donation.css"> 
+</head>
+<body>
+    <header>
+        <h1>Food Donation Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="donate.html">Food Donation Entry</a></li>
+                <li><a href="view_donations.html">View Donations</a></li>
+                <li><a href="request_donations.html">Request Donations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Available Food Donations</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Donor Name</th>
+                    <th>Food Item</th>
+                    <th>Quantity</th>
+                    <th>Expiration Date</th>
+                    <th>Comments</th>
+                </tr>
+            </thead>
+            <tbody id="donation-table-body">
+                <!-- Donation rows will be populated here -->
+            </tbody>
+        </table>
+        <p id="no-donations-msg" style="display: none;">No donations available.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Food Donation Tracker. All rights reserved.</p>
+    </footer>
+    
+    <script src="./view_donation.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Donation Entry - Food Donation Tracker</title>
+    <link rel="stylesheet" href="donate.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Food Donation Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="donate.html">Food Donation Entry</a></li>
+                <li><a href="view_donations.html">View Donations</a></li>
+                <li><a href="request_donations.html">Request Donations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Enter Food Donation</h2>
+        <form id="donation-form">
+            <label for="donor-name">Donor Name:</label>
+            <input type="text" id="donor-name" name="donor-name" required>
+
+            <label for="food-item">Food Item:</label>
+            <input type="text" id="food-item" name="food-item" required>
+
+            <label for="quantity">Quantity:</label>
+            <input type="text" id="quantity" name="quantity" required>
+
+            <label for="expiration-date">Expiration Date:</label>
+            <input type="date" id="expiration-date" name="expiration-date" required>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <input type="submit" value="Submit Donation">
+            <p id="response-msg"></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Food Donation Tracker. All rights reserved.</p>
+    </footer>
+
+    <script src="./donate.js"></script>
+
+    
+</body>
+</html>
